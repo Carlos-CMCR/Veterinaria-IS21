@@ -1,0 +1,269 @@
+body {
+   background-image: url('view/img/background.jpg');
+}
+/* ESTILOS PARA MENU DE NAVEGACION */
+.container img {
+   width: 10%;
+}
+.menu .navbar-nav .nav-link {
+   color: #c6d7e3;
+}
+.menu {
+   background: #252b37;
+}
+.navbar-nav .nav {
+   text-decoration: none;
+   padding-right: 20px;
+   color: white;
+}
+.navbar-nav .nav:hover {
+   color: #85d3de;
+   transition: 0.5s;
+}
+.menu .container .fa-user {
+   font-size: 25px;
+   margin-right: 10px;
+}
+.menu .container .fa-sign-out-alt {
+   font-size: 25px;
+   margin-right: 10px;
+}
+/* MENU PRINCIPAL */
+.banner img {
+   width: 100%;
+   height: 90vh;
+}
+
+/* QUIENES SOMOS */
+
+.contenedor {
+   margin-top: 70px;
+   text-align: center;
+}
+.img-contenedor img {
+   width: 90%;
+}
+.titulo {
+   color: #333333;
+   font-family: 'Poppins', Sans-serif;
+   font-size: 3rem;
+   font-weight: 800;
+}
+.descripcion {
+   text-align: justify;
+}
+
+/* SERVICIOS*/
+.servicios .separador {
+   border-top: 5px solid #85d3de;
+   height: 2px;
+   max-width: 150px;
+   margin: 20px auto 0 auto;
+   margin-top: 25px;
+}
+.servicios {
+   margin-top: 80px;
+   background-color: #252b37;
+   padding-bottom: 45px;
+}
+.servicios .titulo {
+   text-align: center;
+   padding-top: 25px;
+   color: white;
+}
+
+/* estilos para barra de redes sociales */
+
+.social {
+   position: fixed;
+   left: -25px;
+   top: 250px;
+   z-index: 2000;
+}
+
+.social ul {
+   list-style: none;
+}
+
+.social ul li a {
+   display: inline-block;
+   color: white;
+   background: black;
+   padding: 15px 15px;
+   font-size: 25px;
+   transition: all 500ms ease;
+}
+
+.social ul li a:hover {
+   padding: 15px 30px;
+}
+
+.social ul li .fa-facebook-square {
+   background: #3b5998;
+}
+.social ul li .fa-instagram {
+   background: #f56040;
+}
+.social ul li .fa-whatsapp {
+   background: #4ac959;
+}
+
+/* MAPA */
+.container-mapa {
+   text-align: center;
+   margin-top: 80px;
+}
+
+/* estilos para el footer */
+.contenedor-footer {
+   margin-top: 70px;
+   background-color: #252b37;
+   padding: 20px;
+   text-align: center;
+   color: white;
+   font-size: 16px;
+}
+
+.fa-envelope {
+   margin-right: 5px;
+}
+.footer p {
+   overflow: hidden;
+   text-align: center;
+   margin-top: 64px;
+   font-size: 12px;
+   font-weight: 300;
+}
+.container-footer {
+   justify-content: center;
+   display: flex;
+}
+
+/* TARJETAS PARA LOS SERVICIOS */
+.card {
+   align-items: center;
+   text-align: center;
+   margin-bottom: 3rem;
+   box-shadow: 10px 10px 15px black;
+}
+
+.card img {
+   width: 130px;
+}
+
+.link-log {
+   text-align: center;
+}
+.button-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.5rem;
+}
+/* estilos para registrar*/
+.form-registrar {
+   box-shadow: 2px 8px 34px -3px rgba(0, 0, 0, 0.65);
+   margin: 6em auto;
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 2em;
+   overflow: hidden;
+   position: relative;
+}
+
+.form-registrar::before {
+   content: '';
+   z-index: 100;
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   background-color: #0e47a1;
+   top: 0;
+   left: 0;
+}
+
+.form-registrar__title {
+   color: #687178;
+   text-align: center;
+   font-weight: bold;
+   font-size: 2.3em;
+}
+
+.form-registrar__inputs {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-registrar__input {
+   margin-bottom: 1em;
+   padding: 0.5em 0.6em;
+   position: relative;
+   font-size: 1.2em;
+}
+
+.form-registrar__action {
+   background-color: #0e47a1;
+   border: none;
+   color: white;
+   padding: 0.5em 2em;
+
+   cursor: pointer;
+   border-radius: 8px;
+   transition: 0.5s all;
+   font-size: 1.25em;
+}
+
+.form-registrar__action:hover {
+   background-color: rgb(13, 50, 112);
+   transform: scale(1.1);
+}
+
+/* -----------------ESTILOS PARA FORMULARIO DEL PERFIL DEL USUARIO ------------*/
+
+/* .contenedor-perfil {
+   margin-top: 15vh;
+   font-family: 'Poppins', Sans-serif;
+   font-weight: 600;
+}
+.contenedor-perfil h3 {
+   color: #333333;
+   font-family: 'Poppins', Sans-serif;
+   font-size: 2rem;
+   margin-bottom: 25px;
+   font-weight: 800;
+   text-align: center;
+}
+.form-usuario {
+   width: 50%;
+   margin: auto;
+}
+.contenedor-form {
+   width: 60%;
+   margin: auto;
+}
+.input {
+   margin-bottom: 10px;
+}
+.form-usuario input {
+   margin-left: 55px;
+}
+label {
+   display: inline-block;
+   width: 80px;
+}
+.button .btn {
+   background: #252b37;
+   color: white;
+   margin-top: 25px;
+}
+.button .btn:hover {
+   background: #80bcc6;
+   color: black;
+   transition: 0.5s;
+}
+.button {
+   display: inline-block;
+} */

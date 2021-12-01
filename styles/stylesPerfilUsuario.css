@@ -1,0 +1,49 @@
+.contenedor-perfil {
+   margin-top: 15vh;
+   font-family: 'Poppins', Sans-serif;
+   font-weight: 600;
+}
+.contenedor-perfil h3 {
+   color: #333333;
+   font-family: 'Poppins', Sans-serif;
+   font-size: 2rem;
+   margin-bottom: 25px;
+   font-weight: 800;
+   text-align: center;
+}
+.form-usuario {
+   width: 50%;
+   margin: auto;
+}
+.contenedor-form {
+   width: 60%;
+   margin: auto;
+}
+.input {
+   margin-bottom: 10px;
+}
+.form-usuario input {
+   margin-left: 55px;
+}
+label {
+   display: inline-block;
+   width: 80px;
+}
+.botons .btn {
+   background: #252b37;
+   color: white;
+   margin-top: 25px;
+}
+.botons:hover {
+   background: #80bcc6;
+   color: black;
+   transition: 0.5s;
+}
+.button {
+   display: inline-block;
+}
+
+.background-acceso {
+   background-image: url('../view/img/background-acceso.jpg');
+   background-size: 100% auto;
+}

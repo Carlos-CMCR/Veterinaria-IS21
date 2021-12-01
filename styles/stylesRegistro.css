@@ -1,0 +1,58 @@
+body {
+    background-image: url('../view/img/background-acceso.jpg');
+    background-size: 100% auto;
+ }
+ 
+ .container img {
+     width: 10%;
+  }
+  .menu .navbar-nav .nav-link {
+     color: #c6d7e3;
+  }
+  .menu {
+     background: #252b37;
+  }
+  .navbar-nav .nav {
+     text-decoration: none;
+     padding-right: 10px;
+     color: white;
+  }
+  .navbar-nav .nav:hover {
+     color: #85d3de;
+     transition: 0.5s;
+  }
+ 
+ 
+  /* ESTILOS INICIO---- */
+  .background-acceso{
+     background-image: url("../view/img/background-acceso.jpg");
+     background-size:100% auto;
+     
+ }
+ .botons {
+     width: 50%;
+     background: #1f53c5;
+     border: none;
+     padding: 12px;
+     color: white;
+     margin: 16px 0;
+     font-size: 16px;
+   }
+ .card-header{
+     background: #252b37;
+     color: white;
+ }
+ /*.login {
+     width: 100%;
+     max-width: 600px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+     padding-top: 60px;
+  }*/
+  
+ 
+ 
