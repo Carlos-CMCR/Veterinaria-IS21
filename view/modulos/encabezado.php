@@ -17,7 +17,7 @@
                     
                     <a href="getPerfil.php" class="nav"><i class="fas fa-angle-double-right">  RESERVAR CITA</i></a>
                     <a href="view/modulos/moduloSeguridad/formAutenticarUsuario.php" class="nav"><i class="fas fa-sign-out">  INGRESAR</i></a> 
-                    <a href="view/modulos/moduloSeguridad/formRegistrarCLiente.php" class="nav"><i class="fas fa-user-plus">REGISTRARSE</i></a>
+                    <a href="view/modulos/moduloSeguridad/formRegistrarCliente.php" class="nav"><i class="fas fa-user-plus">REGISTRARSE</i></a>
                  </div>
             </div>
         </div>

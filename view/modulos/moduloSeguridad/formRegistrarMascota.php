@@ -14,7 +14,7 @@
 
 <nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
-                    <a href=""><img src="../../img/logo.png" alt=""></a>
+                    <a href="../../../index.php"><img src="../../img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
                  <a href="../../../index.php" class="nav">HOME</a>
@@ -27,7 +27,7 @@
     <div class="card mt-5 " style="width: 23rem;">
         <div class="card-header d-flex justify-content-center "><h5 class="card-title">Registrar Mascota</h5></div>
         <div class="card-body">
-        <form action="../../../controller/getUsuario.php" method="POST">
+        <form action="../../../controller/getRegistrarMascota.php" method="POST">
         <div class="mb-3">
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Nombre de la mascota</label></div>
@@ -36,14 +36,25 @@
         </div>
         <div class="mb-3">
         <div class="row ">
-            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Edad</label></div>
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Edad(neses)</label></div>
             <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtEdad"> </div>
         </div>
         </div>
 		<div class="mb-3">
         <div class="row ">
-            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Vacunas</label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtVacunas"> </div>
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Color</label></div>
+            <div class="col-8 ">
+                <select name="selectColor">
+
+                      <option value="nel" selected>Seleccionar</option>
+                      <option value="blanco">Blanco</option>
+                      <option value="marrón">Marrón</option>
+                      <option value="negro">Negro</option>
+                      <option value="gris">Gris</option>
+                      <option value="mostaza">Mostaza</option>
+                  
+                </select>
+            </div>
         </div>
         </div>
 		<div class="mb-3">
@@ -52,14 +63,40 @@
             <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtRaza"> </div>
         </div>
         </div>
+        <div class="mb-3">
+        <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Tipo</label></div>
+            <div class="col-8 ">
+                <select name="selectTipo">
+                  <option value="nel" selected>Seleccionar</option>
+                  <option value="gato">Gato</option>
+                  <option value="perro">Perro</option>
+                  <option value="conejo">Conejo</option>
+                  <option value="tortuga">Tortuga</option>
+                  <option value="pajaro">Pajaro</option>
+                  <option value="hamster">Hamster</option>
+                  <option value="otro">Otro</option>
+                  
+
+                </select>
+            </div>
+        </div>
+        </div>
         <div class="mb-2">
         <div class="row">
                 <div class="col-12 d-flex justify-content-center"><input type="submit" class="botons"   name="registrarMascota" value="Registrar Mascota"></div>
-        </div></div>
-        </form>
-        <div class="row ">
-            <a href="../../../controller/getPerfil.php" class="d-flex justify-content-center" id="links">Atras</a></div>
         </div>
+        </div>
+
+        <div class="mb-2">
+        <div class="row">
+                <div class="col-12 d-flex justify-content-center"><input type="button" class="botons"   name="atras" value="Atrás" onclick="location='../../../controller/getPerfil.php'"></div>
+        </div>
+        </div>
+
+
+        </form>
+        
         
     </div>
     </div>
