@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 class formAgregarCita{
 	public function formAgregarCitaShow($returned){
@@ -8,7 +8,7 @@ class formAgregarCita{
 		}
 	}
 }
-?>
+?> 
 
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@ class formAgregarCita{
 	
 	
     <div class="d-flex justify-content-center">               
-    <div class="card mt-5 " style="width: 22rem;">
+    <div class="card mt-5 " style="width: 32rem;">
         <div class="card-header d-flex justify-content-center "><h5 class="card-title">Registrar Cita</h5></div>
         <div class="card-body">
         <div class="mb-3">
@@ -45,51 +45,87 @@ class formAgregarCita{
 
 
 	<section class="container">
-	<div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Nombre: </label></div>
+	    <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Nombre Completo: </label></div>
             <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombre" id="nombres" placeholder="Ingrese su Nombre"> </div>
         </div>
-
-		<div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Apellidos: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtApellido" id="apellidos" placeholder="Ingrese sus Apellidos"> </div>
-        </div>
-
-		<div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">DNI: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtDni" id="dni" placeholder="Ingrese su Dni" maxlength="8"> </div>
-        </div>
-
-		<div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Celular: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtCelular" id="celular" placeholder="Ingrese su Celular" maxlength="9"> </div>
-        </div>
-
-		<div class="row ">
+        
+        <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Correo: </label></div>
             <div class="col-8 "><input type="email" class="form-control" aria-describedby="text"  name="txtCorreo" id="correo" placeholder="Ingrese su Correo" > </div>
         </div>
 
-		<div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Contraseña: </label></div>
-            <div class="col-8 "><input type="password" class="form-control" aria-describedby="text"  name="txtPass1" id="pass1" placeholder="Ingrese su contraseña" > </div>
+        <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Celular: </label></div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtCelular" id="celular" placeholder="Ingrese su Celular" maxlength="9"> </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Nombre de Mascota: </label></div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombre" id="nombres" placeholder="Ingrese su Nombre"> </div>
+        </div>
+
+        <div class="mb-3">
+        <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Tipo</label></div>
+            <div class="col-8 ">
+                <select name="selectTipo">
+                  <option value="nel" selected>Seleccionar</option>
+                  <option value="gato">Gato</option>
+                  <option value="perro">Perro</option>
+                  <option value="conejo">Conejo</option>
+                  <option value="tortuga">Tortuga</option>
+                  <option value="pajaro">Pajaro</option>
+                  <option value="hamster">Hamster</option>
+                  <option value="otro">Otro</option>
+                  
+                </select>
+            </div>
+        </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Servicio</label></div>
+            <div class="col-8 ">
+                <select name="selectTipo">
+                  <option value="nel" selected>Seleccionar</option>
+                  <option value="gato">Consulta Veterinaria</option>
+                  <option value="perro">Farmacia Veterinaria</option>
+                  <option value="conejo">Baño y peluquería</option>
+                  <option value="tortuga">Vacunación </option>
+                  <option value="tortuga">Desparasitaciones</option>
+                  <option value="pajaro">Limpeza dental</option>
+             
+                </select>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Describa brevemente la razón de su cita: </label></div>
+            <div class="col-8 "><textarea type="text" name="descripcion" id="" cols="30" rows="10"></textarea ></div>
+        </div>
+        
+        <div class="row ">
+            <div class="col-6 d-flex align-items-center"><label   class="form-label">¿Es paciente?: </label></div>
+        
+        <p><input type="checkbox" name="check" value="1" > Si</p>
+        <p><input type="checkbox" name="check" value="0" > No</p>   
+
         </div>	
-		<div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label"></label></div>
-            <div class="col-8 "><input type="password" class="form-control" aria-describedby="text"  name="txtPass2" id="pass2" placeholder="Vuelva ingresar su contraseña" > </div>
-        </div><br>		
+
+
+
+
+		<br>		
     
-    <p><input type="checkbox" name="check" value="1" > Acepto los términos y condiciones<br><br></p>
+    
 
 	<div class="mb-2">
         <div class="row">
                 <div class="col-12 d-flex justify-content-center"><input type="submit" class="botons"  name="btnRegistrar" id="btnIngresar" value="Registrar"></div>
         </div></div>
 
-		<div class="row ">
-            <a href="formAutenticarUsuario.php" class="d-flex justify-content-center" id="links">¿Ya tengo Cuenta?</a></div>
-        </div>
-
+		
    
   </section>
   </form> 
