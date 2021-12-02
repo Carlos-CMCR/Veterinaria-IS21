@@ -14,7 +14,7 @@
                     <a href="index.php"><img src="view/img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
-                    <a href="getPerfil.php" class="nav"><i class="fas fa-angle-double-right"></i>  RESERVAR CITA</a>
+                    <a href="controller/getExtraerServicios.php" class="nav"><i class="fas fa-angle-double-right"></i>  RESERVAR CITA</a>
                  <a href="controller/getPerfil.php" class="nav"><i class="fas fa-user"></i><?php echo $_SESSION['nombre'];?></a>
                     <a href="controller/getCerrarSesion.php" class="nav"><i class="fas fa-sign-out-alt"></i>CERRAR SESIÓN</a>
                  </div>
