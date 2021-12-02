@@ -13,15 +13,23 @@ class mascota extends Conecta{
 				return 1;
 			} else {
 				return 0;
-			}
-			
-
-
-		
-
-		
+			}	
 
 	}
+
+	public function listarMascotas(){
+			$SQL="SELECT * FROM mascota, usuario WHERE id_usuario=idusuario";
+			$resultado = mysqli_query($this->conectar(),$SQL);
+			/*$num_registros = mysqli_num_rows($resultado);*/
+			$this->desconectar();
+		//	$respuesta ->fetch_all(MYSQLI_ASSOC);
+			$data = $resultado -> fetch_all(MYSQLI_ASSOC);
+     		return $data;
+
+	}
+
+
+
 }
 		
 

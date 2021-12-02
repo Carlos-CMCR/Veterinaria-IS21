@@ -65,11 +65,11 @@
                 </form>
 
 
-                <form action="../../../controller/getGestionarProductos.php" method="POST">
+                <form action="../../../controller/getGestionarMascotas.php" method="POST">
                 <div class="button"><input type="submit" class="btn"  name="btnGestionarMascotas" id="btnGestionarUsuario" value="GESTIONAR MASCOTAS"></div>
                 </form>
 
-                <form action="../../../controller/getGestionarProductos.php" method="POST">
+                <form action="../../../controller/getGestionarCitas.php" method="POST">
                 <div class="button"><input type="submit" class="btn"  name="btnGestionarCitas" id="btnGestionarUsuario" value="GESTIONAR CITAS"></div>
                 </form>
         
