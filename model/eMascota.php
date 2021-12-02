@@ -1,15 +1,31 @@
 <?php
-class mascota{
-	public function agregarMascota($nombreMascota,$edadMascota,$colorMascota,$razaMascota,$tipoMascota){
+include_once("conecta.php");
+
+class mascota extends Conecta{
+	public function agregarMascota($nombreMascota,$edadMascota,$colorMascota,$razaMascota,$tipoMascota,$iduser){
+		
 		echo $nombreMascota;
 		echo $edadMascota;
 		echo $colorMascota;
 		echo $razaMascota;
 		echo $tipoMascota;
+		echo $iduser;
 
-		$SQL = "INSERT INTO mascota (nombres,apellidos,num_doc,celular,correo,pass_user,estado_cuenta) VALUES ('$nombre','$apellido','$dni','$celular','$correo','$pass','activo')";
+		$SQL = "INSERT INTO mascota(id_usuario,tipo,raza,nombre,edad,color) VALUES ('$iduser','$tipoMascota','$razaMascota','$nombreMascota','$edadMascota','$colorMascota')";
 			$resultado = mysqli_query($this->conectar(),$SQL);
 			$this->desconectar();
+
+			if ($resultado == true) {
+				return 1;
+			} else {
+				return 0;
+			}
+			
+
+
+		
+
+		
 
 	}
 }

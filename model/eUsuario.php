@@ -12,7 +12,8 @@ class Usuario extends Conecta{
 		session_start();
 
 		if(is_array($row)){
-				
+
+				$_SESSION['iduser']=$row['idusuario'];
 				$_SESSION['nombre']=$row['nombres'];
 				$_SESSION['apellido']=$row['apellidos'];
 				$_SESSION['user']=$row['correo'];
