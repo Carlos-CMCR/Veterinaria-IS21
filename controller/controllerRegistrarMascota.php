@@ -12,7 +12,7 @@ class controllerRegistroMascota{
 					include_once("../shared/formMensajeSistema.php");
 		            $mensaje = new formMensajeSistema;
 		            $mensaje ->formMensajeSistema();
-		            $mensaje ->formMensajeSistemaShowExito("Ha registrado correctamente su mascota. ¿Desea registrar otra mascota?","<a href='../view/modulos/moduloSeguridad/formAutenticarUsuario.php'>SI </a> <a href='../view/modulos/moduloSeguridad/formAutenticarUsuario.php'> NO</a>");
+		            $mensaje ->formMensajeSistemaShowExito("Ha registrado correctamente su mascota. ¿Desea registrar otra mascota?","<a href='../view/modulos/moduloSeguridad/formRegistrarMascota.php'>SI   </a> <a href='../index.php'>   NO</a>");
 
 		} elseif($retornado == 0) {
 					include_once("../shared/formMensajeSistema.php");

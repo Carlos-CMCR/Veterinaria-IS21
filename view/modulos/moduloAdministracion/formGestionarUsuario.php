@@ -30,8 +30,14 @@ class formGestionarUsuarios extends formulario
                     <div class="div_btn" style="display: flex;">
                         <form action="getGestionarUsuario.php" method="post">
                             <input type="submit" class="btn btn-primary" name="btnRegistrarUsuario" value="Registrar">
-                        </form>
+                        </form>                        
                     </div>
+                    <div class="div_btn" style="display: flex;">
+                        <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
+                            <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>
+                        </form>                       
+                    </div>
+                    
 
                         <table class="table">
                             <thead class="thead-dark">
@@ -47,6 +53,7 @@ class formGestionarUsuarios extends formulario
                                 </tr>
                             </thead>
                             <?php
+
                             foreach ($listaUsuarios as $user) { ?>
                                 <tr class="tr">
                                     <td><?php echo $user['nombres'] ?></td>
@@ -65,7 +72,8 @@ class formGestionarUsuarios extends formulario
                                             <form action="getGestionarUsuario.php" method="POST">
                                                 <input type="hidden" name="idusuario" value='<?php echo $user['idusuario'] ?>'>
                                                 <input type=hidden name=estado value='activo'>
-                                                <?php if ($_SESSION['num_doc'] == $user['num_doc']) { ?>
+                                                <?php 
+                                                if ($_SESSION['dni'] == $user['num_doc']) { ?>
                                                     <input class="btn btn-warning" type="submit" name="btnCambiarEstado" value="Deshabilitar" disabled>
 
                                                 <?php } else { ?>
@@ -90,7 +98,7 @@ class formGestionarUsuarios extends formulario
                                 <input type="hidden" name="password" value="<?php echo $_SESSION['pass_user'] ?>">
                                 
                             </form>
-                            <form action='../controller/getPassword.php' method='POST'>
+                            <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
                                 <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>
                             </form>
                             <form action='../controller/getCerrarSesion.php' method='POST'>
