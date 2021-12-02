@@ -15,7 +15,7 @@
                     
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
-                 <a href="../../../index.php" class="nav">HOMEE</a>
+                 <a href="../../../index.php" class="nav"><i class="fas fa-home"> HOME</i></a>
                  </div>
             </div>
         </div>
