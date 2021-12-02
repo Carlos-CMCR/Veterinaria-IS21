@@ -10,7 +10,7 @@ class formGestionarUsuarios extends formulario
     { ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <?php /*session_start(); */?>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center align-items-center"  style="background-color: #252b37;">
             <div class="card my-4" style="width:80%;">
                 <div class="card-header">
                     <h1 class="titulo">Gestionar Usuarios</h1>
@@ -39,7 +39,7 @@ class formGestionarUsuarios extends formulario
                     </div>
                     
 
-                        <table class="table">
+                        <table class="table" border="1">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col" style="width:10%;">Nombre</th>

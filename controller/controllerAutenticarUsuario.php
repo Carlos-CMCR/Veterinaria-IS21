@@ -5,7 +5,7 @@
 
             include_once("../model/eUsuario.php");            
             $objUsuario = new Usuario;
-            $respuesta = $objUsuario -> verificarUsuario($log,$pass);
+            $respuesta = $objUsuario -> VerificarUsuario($log,$pass);
             if ($respuesta==null) {
                 include_once("../shared/formMensajeSistema.php");
                 $mensaje = new formMensajeSistema;

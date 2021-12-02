@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/9cdc4a056d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../../styles/stylesLogin.css">
 </head>
-<body>
+
     <nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
                     <a href="../../../index.php"><img src="../../img/logo.png" alt=""></a>
@@ -28,8 +28,7 @@
             </div>
         </div>
     </nav>
-</body>
-</html>
+<body>
 
     <style>
     
@@ -42,6 +41,8 @@
         background: #252b37;
         color: white;
         margin-top: 65px;
+        width: 30%;
+        
      }
      .button .btn:hover {
         background: #80bcc6;
@@ -72,7 +73,8 @@
                 <div class="button"><input type="submit" class="btn"  name="btnGestionarCitas" id="btnGestionarUsuario" value="GESTIONAR CITAS"></div>
                 </form>
         
-
+</body>
+<html>
         
 
         
