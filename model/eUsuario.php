@@ -83,7 +83,7 @@ class Usuario extends Conecta{
 			
 
 
-			$SQL = "INSERT INTO usuario (nombres,apellidos,num_doc,celular,correo,pass_user,estado_cuenta) VALUES ('$nombre','$apellido','$dni','$celular','$correo','$pass','activo')";
+			$SQL = "INSERT INTO usuario (nombres,apellidos,num_doc,celular,correo,respuesta,pass_user,estado_cuenta) VALUES ('$nombre','$apellido','$dni','$celular','$correo','rdefault','$pass','activo')";
 			$resultado = mysqli_query($this->conectar(),$SQL);
 			$this->desconectar();	
 
