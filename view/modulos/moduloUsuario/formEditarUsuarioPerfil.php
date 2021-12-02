@@ -60,7 +60,7 @@
         <div class="mb-3">
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="Documento" class="form-label">Documento</label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text" disabled="disabled" name="Documento" id="Documento" value="<?php echo $atributo['num_doc']; ?>"> </div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text" disabled="disabled" name="dni" id="dni" value="<?php echo $atributo['num_doc']; ?>"> </div>
         </div>
         </div>
         <div class="mb-3">
@@ -73,7 +73,7 @@
         
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="Documento" class="form-label">Correo</label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text" disabled="disabled" name="Documento" id="Documento" value="<?php echo $atributo['correo']; ?>"> </div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text" disabled="disabled" name="correo" id="correo" value="<?php echo $atributo['correo']; ?>"> </div>
         </div>
         </div>
         <div class="mb-2">

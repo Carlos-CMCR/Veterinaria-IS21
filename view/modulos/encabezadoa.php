@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
                     <a href="getPerfil.php" class="nav"><i class="fa fa-cogs"></i>Gestionar</a>
-                    <a href="getPerfil.php" class="nav"><i class="far fa-user"></i><?php echo $_SESSION['nombre'];?></a>
+                    <a href="controller/getPerfil.php" class="nav"><i class="far fa-user"></i><?php echo $_SESSION['nombre'];?></a>
                     <a href="controller/getCerrarSesion.php" class="nav"><i class="fas fa-sign-out-alt"></i>CERRAR SESIÓN</a>
 
                  </div>

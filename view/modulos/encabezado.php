@@ -14,8 +14,10 @@
                     <a href="index.php"><img src="view/img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
-                 <a href="view/modulos/moduloSeguridad/formAutenticarUsuario.php" class="nav">INGRESAR</a> 
-                    <a href="view/modulos/moduloSeguridad/formRegistrarCLiente.php" class="nav">REGISTRARSE</a>
+                    
+                    <a href="getPerfil.php" class="nav"><i class="fas fa-angle-double-right">  RESERVAR CITA</i></a>
+                    <a href="view/modulos/moduloSeguridad/formAutenticarUsuario.php" class="nav"><i class="fas fa-sign-out">  INGRESAR</i></a> 
+                    <a href="view/modulos/moduloSeguridad/formRegistrarCLiente.php" class="nav"><i class="fas fa-user-plus">REGISTRARSE</i></a>
                  </div>
             </div>
         </div>

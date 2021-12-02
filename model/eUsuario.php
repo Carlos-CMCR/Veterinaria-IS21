@@ -85,10 +85,11 @@ class Usuario extends Conecta{
 
 			$SQL = "INSERT INTO usuario (nombres,apellidos,num_doc,celular,correo,pass_user,estado_cuenta) VALUES ('$nombre','$apellido','$dni','$celular','$correo','$pass','activo')";
 			$resultado = mysqli_query($this->conectar(),$SQL);
+			$this->desconectar();	
 
 			if ($resultado==TRUE) {
-				$SQL = "SELECT usuario.idusuario FROM usuario WHERE num_doc='$dni' ";
-				$resultado = mysqli_query($this->conectar(),$SQL);
+				$SQL3 = "SELECT usuario.idusuario FROM usuario WHERE num_doc='$dni' ";
+				$resultado = mysqli_query($this->conectar(),$SQL3);
 				$row = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
 				$idusuario=$row['idusuario'];
 				$idrol=1;
@@ -99,6 +100,18 @@ class Usuario extends Conecta{
 				return 0;
 			}
 			
+		}
+
+
+		public function actualizarUser($nombre,$apellido,$dni,$celular){
+			
+			$SQL = "UPDATE `usuario` SET `nombres` = '$nombre',`apellidos` = '$apellido',`celular` = '$celular' WHERE `usuario`.`num_doc` = $dni";
+			$resultado = mysqli_query($this->conectar(),$SQL);
+			$this->desconectar();		
+				
+	     	if($resultado == true) return (1);
+				else return (0);
+
 		}
 
 	
