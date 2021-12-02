@@ -6,8 +6,8 @@ if (isset($_SESSION['idrol'])) {
 	$returned = $extraer -> listarProductos();
 
 	include_once("../view/modulos/moduloAdministracion/formAgregarCita.php");
-	$enviar = new formAgregarCita;
-	$enviar -> formAgregarCitaShow($returned);
+	/*$enviar = new formAgregarCita;
+	$enviar -> formAgregarCitaShow($returned);*/
 } else {
 	include_once("../shared/formMensajeSistema.php");
 		$mensaje = new formMensajeSistema;

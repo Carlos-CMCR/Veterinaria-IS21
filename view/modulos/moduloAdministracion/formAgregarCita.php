@@ -1,5 +1,5 @@
- <?php
-
+<?php
+/*
 class formAgregarCita{
 	public function formAgregarCitaShow($returned){
 		
@@ -7,7 +7,7 @@ class formAgregarCita{
 			echo $servicio['nom_producto'];
 		}
 	}
-}
+}*/
 ?> 
 
 <!DOCTYPE html>
@@ -106,11 +106,8 @@ class formAgregarCita{
         </div>
         
         <div class="row ">
-            <div class="col-6 d-flex align-items-center"><label   class="form-label">¿Es paciente?: </label></div>
-        
-        <p><input type="checkbox" name="check" value="1" > Si</p>
-        <p><input type="checkbox" name="check" value="0" > No</p>   
-
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Fecha: </label></div>
+            <div class="col-8 "><input type="time" class="form-control" aria-describedby="text"  name="txtCorreo" > </div>
         </div>	
 
 
