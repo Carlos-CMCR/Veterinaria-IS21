@@ -60,8 +60,8 @@ class formEditarProducto extends formulario
                     </form>
                     <div class="div-header">                    	
 
-                        <form action="getGestionarUsuario.php" method="POST">                           
-                            <input class="btn btn-dark" type="submit" name="btnGestionarUsuario" value="Atras">
+                        <form action="getGestionarProductos.php" method="POST">                           
+                            <input class="btn btn-dark" type="submit" name="btnGestionarProductos" value="Atrás">
                         </form>
                         
                     </div>

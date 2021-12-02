@@ -60,13 +60,17 @@
         
 
         
-                <form action="getGestionarProductos.php" method="POST">
+                <form action="../../../controller/getGestionarProductos.php" method="POST">
                 <div class="button"><input type="submit" class="btn"  name="btnGestionarProductos" id="btnGestionarProductos" value="GESTIONAR SERVICIOS"></div>
                 </form>
 
 
-                <form action="getGestionarUsuario.php" method="POST">
-                <div class="button"><input type="submit" class="btn"  name="btnGestionarUsuario" id="btnGestionarUsuario" value="GESTIONAR MASCOTAS"></div>
+                <form action="../../../controller/getGestionarProductos.php" method="POST">
+                <div class="button"><input type="submit" class="btn"  name="btnGestionarMascotas" id="btnGestionarUsuario" value="GESTIONAR MASCOTAS"></div>
+                </form>
+
+                <form action="../../../controller/getGestionarProductos.php" method="POST">
+                <div class="button"><input type="submit" class="btn"  name="btnGestionarCitas" id="btnGestionarUsuario" value="GESTIONAR CITAS"></div>
                 </form>
         
 

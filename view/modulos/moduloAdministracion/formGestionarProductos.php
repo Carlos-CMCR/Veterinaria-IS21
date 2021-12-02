@@ -33,6 +33,12 @@ class formGestionarProductos extends formulario
                         </form>
                     </div>
 
+                    <div class="div_btn" style="display: flex;">
+                        <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
+                                <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>
+                            </form>
+                    </div>
+
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
@@ -102,7 +108,7 @@ class formGestionarProductos extends formulario
                                 <input type="hidden" name="password" value="<?php echo $_SESSION['pass_user'] ?>">
                                 
                             </form>
-                            <form action='../controller/getPassword.php' method='POST'>
+                            <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
                                 <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>
                             </form>
                             <form action='../controller/getCerrarSesion.php' method='POST'>
