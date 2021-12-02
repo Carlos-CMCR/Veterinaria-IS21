@@ -1,4 +1,4 @@
-<?php
+ <?php
 /*
 class formAgregarCita{
 	public function formAgregarCitaShow($returned){
@@ -27,7 +27,7 @@ class formAgregarCita{
                     
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
-                 <a href="../../../index.php" class="nav"><i class="fas fa-home"> HOME</i></a>
+                 <a href="../index.php" class="nav"><i class="fas fa-home"> HOME</i></a>
                  </div>
             </div>
         </div>
@@ -105,17 +105,21 @@ class formAgregarCita{
             <div class="col-8 "><textarea type="text" name="descripcion" id="" cols="30" rows="10"></textarea ></div>
         </div>
         
-        <div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Fecha: </label></div>
-            <div class="col-8 "><input type="time" class="form-control" aria-describedby="text"  name="txtCorreo" > </div>
-        </div>	
+        <div class="row">
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Eliga fecha: </label></div>
 
+            <div class="col-8 d-flex align-items-center  ">
+            <input type="date"  >  
+        
+        
+        </div>
+        <div class="row">
+            <div class="col-4 d-flex align-items-center"><label   class="form-label">Eliga hora:  </label></div>
 
-
-
-		<br>		
-    
-    
+            <div class="col-8 d-flex align-items-center  ">
+     
+            <input type="time"  class="ms-2">  </div>
+        </div>
 
 	<div class="mb-2">
         <div class="row">
