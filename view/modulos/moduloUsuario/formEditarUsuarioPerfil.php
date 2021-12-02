@@ -23,7 +23,7 @@
 <body>
     <nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
-                    <a href=""><img src="../../img/logo.png" alt=""></a>
+                    <a href="../index.php"><img src="../view/img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
                     <a href="getCerrarSesion.php" class="nav"><i class="fas fa-sign-out-alt"></i>CERRAR SESIÓN</a>
@@ -81,6 +81,7 @@
             
                 
                 <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnActualizar" id="btnActualizar" value="Actualizar"></div>
+                <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnActualizar" id="btnActualizar" value="Atrás" onclick="location='../controller/getPerfil.php'"></div>
                 
             
         </div></div>
@@ -90,9 +91,9 @@
     </div></div>
     </form>
 
-    <form action="getPerfil.php">
-        <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnActualizar" id="btnActualizar" value="Atrás"></div>
-    </form>
+    
+        
+    
     
 
 

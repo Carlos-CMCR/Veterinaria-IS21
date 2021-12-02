@@ -27,7 +27,7 @@
 <body>
     <nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
-                    <a href=""><img src="../../img/logo.png" alt=""></a>
+                    <a href="../index.php"><img src="../view/img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
                     <a href="getCerrarSesion.php" class="nav"><i class="fas fa-sign-out-alt"></i>CERRAR SESIÓN</a>
@@ -81,8 +81,8 @@
         </div>
         <div class="mb-2">
         <div class="row">
-                <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnIngresar" id="btnIngresar" value="Volver" onclick="volver();"></div>
-                <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnIngresar" id="btnIngresar" value="Registrar Mascota" onclick="location='../view/modulos/moduloSeguridad/formRegistrarMascota.php'"></div>
+                <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnVolver" id="btnIngresar" value="Volver" onclick="location='../index.php'"></div>
+                <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnRegistrarMascota" id="btnIngresar" value="Registrar Mascota" onclick="location='../view/modulos/moduloSeguridad/formRegistrarMascota.php'"></div>
                 <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnEditar" id="btnIngresar" value="Editar"></div>
             
         </div></div>
