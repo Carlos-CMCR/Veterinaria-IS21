@@ -73,7 +73,7 @@
             $objAgregarRol = new usuario;
             $objAgregarRol->AgregarRol($idusuario,$idrol);
             include_once("../view/modulos/moduloAdministracion/formGestionarUsuario.php");
-            include_once("controllerGestionarusuario.php");
+            include_once("controllerGestionarUsuario.php");
             $objFormGestionarUsuario = new formGestionarUsuarios;
             $objUsuarios = new controllerGestionarUsuario;
             $objUsuarios = $objUsuarios->obtenerusuarios();
@@ -90,7 +90,7 @@
             $estadoUsuario=new usuario;
             $estadoUsuario->CambiarEstadoUsuario($idusuario,$nuevoestado);
             include_once("../view/modulos/moduloAdministracion/formGestionarUsuario.php");
-            include_once("controllerGestionarusuario.php");
+            include_once("controllerGestionarUsuario.php");
             $objFormGestionarUsuario = new formGestionarUsuarios;
             $objUsuarios = new controllerGestionarUsuario;
             $objUsuarios = $objUsuarios->obtenerusuarios();
