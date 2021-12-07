@@ -25,32 +25,54 @@ if (isset($_POST['btnActualizar'])){
 	$retornado = validarCampos($pass,$newpass1,$newpass2);
 
 	if ($retornado==1) {
-		echo "Campos vacíos";
+		include_once("../shared/formMensajeSistema.php");
+        $mensajeo = new formMensajeSistema;
+        $mensajeo ->formMensajeSistema();
+        $mensajeo ->formMensajeSistemaShow("Los campos están vacíos.","<a href='../view/modulos/moduloSeguridad/formChangePassword.php'>Atrás</a>");
 	}elseif ($retornado==2) {
-		echo "8 carácteres como mínimo";
+		include_once("../shared/formMensajeSistema.php");
+        $mensajeo = new formMensajeSistema;
+        $mensajeo ->formMensajeSistema();
+        $mensajeo ->formMensajeSistemaShow("Ingrese 8 carácteres como mínimo.","<a href='../view/modulos/moduloSeguridad/formChangePassword.php'>Atrás</a>");
 	}elseif($retornado==3){	
-		echo "CONTRA DE LA BD INCORRECTA";
+		include_once("../shared/formMensajeSistema.php");
+        $mensajeo = new formMensajeSistema;
+        $mensajeo ->formMensajeSistema();
+        $mensajeo ->formMensajeSistemaShow("Contraseña actual incorrecta.","<a href='../view/modulos/moduloSeguridad/formChangePassword.php'>Atrás</a>");
 	}elseif ($retornado==4) {
-		echo "Contraseñas IGUALES";
+		
 		$user = $_SESSION['user'];
 		include_once("../model/eUsuario.php");
 		$enviar= new Usuario;
 		$returned=$enviar -> modificarPass($newpass1,$user);
 
 		if ($returned==1) {
-			echo "Se ha cambiado las contraseñas correctamente";
+			session_destroy();
+			include_once("../shared/formMensajeSistema.php");
+	        $mensajeo = new formMensajeSistema;
+	        $mensajeo ->formMensajeSistema();
+	        $mensajeo ->formMensajeSistemaShowExito("La contraseña se ha modificado correctamente. Ingrese nuevamente","<a href='../view/modulos/moduloSeguridad/formAutenticarUsuario.php'>Ir al login</a>");
 		} else {
-			echo "Ha ocurrido un error";
+			include_once("../shared/formMensajeSistema.php");
+	        $mensajeo = new formMensajeSistema;
+	        $mensajeo ->formMensajeSistema();
+	        $mensajeo ->formMensajeSistemaShow("Ha ocurrido un error. Inténtelo nuevamente.","<a href='../view/modulos/moduloSeguridad/formChangePassword.php'>Atrás</a>");
 		}
 		
 		
 	}elseif ($retornado==5) {
-		echo "Contraseñas DIFERENTES";
+		include_once("../shared/formMensajeSistema.php");
+        $mensajeo = new formMensajeSistema;
+        $mensajeo ->formMensajeSistema();
+        $mensajeo ->formMensajeSistemaShow("Los campos de las nuevas contraseñas no coinciden.","<a href='../view/modulos/moduloSeguridad/formChangePassword.php'>Atrás</a>");
 	}
 	
 
 } else {
-	echo "Nelson";
+		include_once("../shared/formMensajeSistema.php");
+        $mensajeo = new formMensajeSistema;
+        $mensajeo ->formMensajeSistema();
+        $mensajeo ->formMensajeSistemaShow("Acceso no permitido","<a href='../view/modulos/moduloSeguridad/formChangePassword.php'>Atrás</a>");
 }
 
 ?>
