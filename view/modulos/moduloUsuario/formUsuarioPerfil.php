@@ -84,6 +84,10 @@
                 <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnVolver" id="btnIngresar" value="Volver" onclick="location='../index.php'"></div>
                 <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnRegistrarMascota" id="btnIngresar" value="Registrar Mascota" onclick="location='../view/modulos/moduloSeguridad/formRegistrarMascota.php'"></div>
                 <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnEditar" id="btnIngresar" value="Editar"></div>
+                <center>
+                    <div class="col-5 d-flex justify-content-center"><input type="button" class="botons"  name="btnCambiar" id="btnCambiar" value="Cambiar Contraseña" onclick="location='../view/modulos/moduloSeguridad/formChangePassword.php'"></div>
+                </center>
+                
             
         </div></div>
         

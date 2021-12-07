@@ -82,6 +82,7 @@
                 
                 <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnActualizar" id="btnActualizar" value="Actualizar"></div>
                 <div class="col-4 d-flex justify-content-center"><input type="button" class="botons"  name="btnActualizar" id="btnActualizar" value="Atrás" onclick="location='../controller/getPerfil.php'"></div>
+                <div class="col-4 d-flex justify-content-center"><input type="submit" class="botons"  name="btnPregunta" id="btnPregunta" value="Seguridad"></div>
                 
             
         </div></div>
