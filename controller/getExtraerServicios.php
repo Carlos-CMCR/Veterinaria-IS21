@@ -5,9 +5,13 @@ if (isset($_SESSION['idrol'])) {
 	$extraer = new eProducto;
 	$returned = $extraer -> listarServicios();
 
+	include_once("../model/eMascota.php");
+	$extraer = new mascota;
+	$returned2 = $extraer -> obtenerMascotas();
+
 	include_once("../view/modulos/moduloAdministracion/formAgregarCita.php");
 	$enviar = new formAgregarCita;
-	$enviar -> formAgregarCitaShow($returned);
+	$enviar -> formAgregarCitaShow($returned,$returned2);
 } else {
 	include_once("../shared/formMensajeSistema.php");
 		$mensaje = new formMensajeSistema;

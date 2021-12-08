@@ -52,17 +52,25 @@ class formAgregarCita{
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Correo: </label></div>
             <div class="col-8 "><input type="email" class="form-control" aria-describedby="text"  name="txtCorreo" id="" placeholder="Ingrese su Correo" > </div>
-        </div>
+        </div><br>
 
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Celular: </label></div>
             <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtCelular" id="" placeholder="Ingrese su Celular" maxlength="9"> </div>
-        </div>
+        </div><br>
 
         <div class="row ">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Nombre de Mascota: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombreMascota" id="" placeholder="Ingrese su Nombre"> </div>
-        </div>
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Mascota</label></div>
+            <div class="col-8 ">
+                <select name="selectTipoServicio">
+                  <option value="0" selected>Seleccionar</option>
+                  <?php foreach ($returned2 as $mascotas):?>
+                    <option value="<?php echo $servicios['idproducto']?>"> <?php echo $mascotas['nombre']?> </option>
+                  <?php endforeach?>
+             
+                </select>
+            </div>
+        </div><br>
 
         <div class="mb-3">
         <div class="row ">
@@ -103,7 +111,7 @@ class formAgregarCita{
         </div>
         
         <div class="row">
-            <div class="col-4 d-flex align-items-center"><label class="form-label">Eliga fecha: </label></div>
+            <div class="col-4 d-flex align-items-center"><label class="form-label">Fecha de cita: </label></div>
 
             <div class="col-8 d-flex align-items-center  ">
             <input type="date" name="fechaCita">  
