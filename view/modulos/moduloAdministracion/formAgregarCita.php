@@ -110,13 +110,7 @@ class formAgregarCita{
         
         
         </div>
-        <div class="row">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Eliga hora:  </label></div>
-
-            <div class="col-8 d-flex align-items-center  ">
-     
-            <input type="time"  class="ms-2" name="horaCita">  </div>
-        </div>
+        
 
 	<div class="mb-2">
         <div class="row">
