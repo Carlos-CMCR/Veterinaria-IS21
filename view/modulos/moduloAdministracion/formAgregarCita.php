@@ -1,14 +1,13 @@
  <?php
-/*
+
 class formAgregarCita{
 	public function formAgregarCitaShow($returned){
 		
-		foreach ($returned as $servicio){
-			echo $servicio['nom_producto'];
-		}
+		
 	}
-}*/
-?> 
+}
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +22,7 @@ class formAgregarCita{
 <body class="background-acceso" >
 	<nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
-                    <a href="../../../index.php"><img src="../../img/logo.png" alt=""></a>
+                    <a href="../index.php"><img src="../view/img/logo.png" alt=""></a>
                     
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
@@ -41,28 +40,28 @@ class formAgregarCita{
         <div class="mb-3">
         <div class="row ">
 
-	<form class="d-flex justify-content-center"  action="../../../controller/getRegistrarCliente.php" method="POST">
+	<form class="d-flex justify-content-center"  action="../controller/getRegistroCita.php" method="POST">
 
 
 	<section class="container">
 	    <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Nombre Completo: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombre" id="nombres" placeholder="Ingrese su Nombre"> </div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombre" id="" placeholder="Ingrese su Nombre"> </div>
         </div>
         
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Correo: </label></div>
-            <div class="col-8 "><input type="email" class="form-control" aria-describedby="text"  name="txtCorreo" id="correo" placeholder="Ingrese su Correo" > </div>
+            <div class="col-8 "><input type="email" class="form-control" aria-describedby="text"  name="txtCorreo" id="" placeholder="Ingrese su Correo" > </div>
         </div>
 
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Celular: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtCelular" id="celular" placeholder="Ingrese su Celular" maxlength="9"> </div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtCelular" id="" placeholder="Ingrese su Celular" maxlength="9"> </div>
         </div>
 
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label   class="form-label">Nombre de Mascota: </label></div>
-            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombre" id="nombres" placeholder="Ingrese su Nombre"> </div>
+            <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtNombreMascota" id="" placeholder="Ingrese su Nombre"> </div>
         </div>
 
         <div class="mb-3">
@@ -79,6 +78,7 @@ class formAgregarCita{
                   <option value="hamster">Hamster</option>
                   <option value="otro">Otro</option>
                   
+                  
                 </select>
             </div>
         </div>
@@ -87,14 +87,11 @@ class formAgregarCita{
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Servicio</label></div>
             <div class="col-8 ">
-                <select name="selectTipo">
-                  <option value="nel" selected>Seleccionar</option>
-                  <option value="gato">Consulta Veterinaria</option>
-                  <option value="perro">Farmacia Veterinaria</option>
-                  <option value="conejo">Baño y peluquería</option>
-                  <option value="tortuga">Vacunación </option>
-                  <option value="tortuga">Desparasitaciones</option>
-                  <option value="pajaro">Limpeza dental</option>
+                <select name="selectTipoServicio">
+                  <option value="0" selected>Seleccionar</option>
+                  <?php foreach ($returned as $servicios):?>
+                    <option value="<?php echo $servicios['idproducto']?>"> <?php echo $servicios['nom_producto']?> </option>
+                  <?php endforeach?>
              
                 </select>
             </div>
@@ -106,10 +103,10 @@ class formAgregarCita{
         </div>
         
         <div class="row">
-            <div class="col-4 d-flex align-items-center"><label   class="form-label">Eliga fecha: </label></div>
+            <div class="col-4 d-flex align-items-center"><label class="form-label">Eliga fecha: </label></div>
 
             <div class="col-8 d-flex align-items-center  ">
-            <input type="date"  >  
+            <input type="date" name="fechaCita">  
         
         
         </div>
@@ -118,7 +115,7 @@ class formAgregarCita{
 
             <div class="col-8 d-flex align-items-center  ">
      
-            <input type="time"  class="ms-2">  </div>
+            <input type="time"  class="ms-2" name="horaCita">  </div>
         </div>
 
 	<div class="mb-2">

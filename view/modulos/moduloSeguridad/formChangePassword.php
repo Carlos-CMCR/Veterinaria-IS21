@@ -15,7 +15,7 @@
 
 <nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
-                    <a href=""><img src="../../img/logo.png" alt=""></a>
+                    <a href="../../../index.php"><img src="../../img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
                  <a href="../../../index.php" class="nav">HOME</a>
@@ -32,19 +32,19 @@
         <div class="mb-3">
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Contraseña Actual</label></div>
-            <div class="col-8 d-flex align-items-center"><input type="text" class="form-control" aria-describedby="text"  value="" name="password" id="new_password"> </div>
+            <div class="col-8 d-flex align-items-center"><input type="password" class="form-control" aria-describedby="text"  value="" name="password" id="new_password"> </div>
         </div><br>
         </div>
         <div class="mb-3">
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Nueva contraseña</label></div>
-            <div class="col-8 d-flex align-items-center"><input type="text" class="form-control" aria-describedby="text"  value="" name="new_password1" id="new_password"> </div>
+            <div class="col-8 d-flex align-items-center"><input type="password" class="form-control" aria-describedby="text"  value="" name="new_password1" id="new_password"> </div>
         </div>
         </div>
         <div class="mb-3">
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Repita Contraseña</label></div>
-            <div class="col-8 d-flex align-items-center"><input type="text" class="form-control" aria-describedby="text"  value="" name="new_password2" id="new_password2"> </div>
+            <div class="col-8 d-flex align-items-center"><input type="password" class="form-control" aria-describedby="text"  value="" name="new_password2" id="new_password2"> </div>
         </div>
         </div>
         

@@ -34,6 +34,17 @@ class eProducto extends Conecta{
 
 
 	}
+
+	public function listarServicios(){
+			$SQL="SELECT * FROM producto";
+			$resultado = mysqli_query($this->conectar(),$SQL);
+			/*$num_registros = mysqli_num_rows($resultado);*/
+			$this->desconectar();
+		//	$respuesta ->fetch_all(MYSQLI_ASSOC);
+			$data = $resultado -> fetch_all(MYSQLI_ASSOC);
+     		return $data;
+
+	}
 }
 
 ?>
