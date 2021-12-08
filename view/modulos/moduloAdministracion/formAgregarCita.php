@@ -62,10 +62,10 @@ class formAgregarCita{
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label for="usuario" class="form-label">Mascota</label></div>
             <div class="col-4 ">
-                <select name="selectTipoServicio">
+                <select name="selectNomMascota">
                   <option value="0" selected>Seleccionar</option>
                   <?php foreach ($returned2 as $mascotas):?>
-                    <option value="<?php echo $mascotas['id_mascota']?>"> <?php echo $mascotas['nombre']?> </option>
+                    <option value="<?php echo $mascotas['nombre']?>"> <?php echo $mascotas['nombre']?> </option>
                   <?php endforeach?>
              
                 </select>
@@ -80,7 +80,7 @@ class formAgregarCita{
             <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Tipo</label></div>
             <div class="col-8 ">
                 <select name="selectTipo">
-                  <option value="nel" selected>Seleccionar</option>
+                  <option value="0" selected>Seleccionar</option>
                   <option value="gato">Gato</option>
                   <option value="perro">Perro</option>
                   <option value="conejo">Conejo</option>
@@ -101,7 +101,7 @@ class formAgregarCita{
                 <select name="selectTipoServicio">
                   <option value="0" selected>Seleccionar</option>
                   <?php foreach ($returned as $servicios):?>
-                    <option value="<?php echo $servicios['idproducto']?>"> <?php echo $servicios['nom_producto']?> </option>
+                    <option value="<?php echo $servicios['nom_producto']?>"> <?php echo $servicios['nom_producto']?> </option>
                   <?php endforeach?>
              
                 </select>
