@@ -28,8 +28,8 @@ class mascota extends Conecta{
 
 	}
 
-	public function obtenerMascotas(){
-		$SQL = "SELECT nombre FROM `mascota` WHERE id_usuario = '68'";
+	public function obtenerMascotas($id){
+		$SQL = "SELECT id_mascota,nombre FROM `mascota` WHERE id_usuario = '$id'";
 		$resultado = mysqli_query($this->conectar(),$SQL);
 		$this->desconectar();
 		$data = $resultado -> fetch_all(MYSQLI_ASSOC);

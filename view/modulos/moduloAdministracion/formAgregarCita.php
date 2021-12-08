@@ -60,15 +60,18 @@ class formAgregarCita{
         </div><br>
 
         <div class="row ">
-            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Mascota</label></div>
-            <div class="col-8 ">
+            <div class="col-4 d-flex align-items-center"><label for="usuario" class="form-label">Mascota</label></div>
+            <div class="col-4 ">
                 <select name="selectTipoServicio">
                   <option value="0" selected>Seleccionar</option>
                   <?php foreach ($returned2 as $mascotas):?>
-                    <option value="<?php echo $servicios['idproducto']?>"> <?php echo $mascotas['nombre']?> </option>
+                    <option value="<?php echo $mascotas['id_mascota']?>"> <?php echo $mascotas['nombre']?> </option>
                   <?php endforeach?>
              
                 </select>
+            </div>
+            <div class="col-4">
+              <a href="../view/modulos/moduloSeguridad/formRegistrarMascota.php">Agregar Mascota</a>
             </div>
         </div><br>
 

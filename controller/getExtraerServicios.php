@@ -5,9 +5,10 @@ if (isset($_SESSION['idrol'])) {
 	$extraer = new eProducto;
 	$returned = $extraer -> listarServicios();
 
+	$iduser=$_SESSION['iduser'];
 	include_once("../model/eMascota.php");
 	$extraer = new mascota;
-	$returned2 = $extraer -> obtenerMascotas();
+	$returned2 = $extraer -> obtenerMascotas($iduser);
 
 	include_once("../view/modulos/moduloAdministracion/formAgregarCita.php");
 	$enviar = new formAgregarCita;
