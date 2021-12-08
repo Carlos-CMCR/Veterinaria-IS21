@@ -36,6 +36,29 @@ class mascota extends Conecta{
      	return $data;
 	}
 
+	public function registrarCita($iduser,$nombre,$correo,$celular,$idMascota,$idServicio,$descripcion,$fecha){
+		echo $iduser." ";
+		echo $idServicio." ";
+		echo $idMascota." ";		
+		echo $nombre." ";
+		echo $correo." ";
+		echo $celular." ";
+		echo $descripcion." ";		
+		echo $fecha." ";
+		
+		$SQL="INSERT INTO `citas` (`id_usuario`, `id_mascota`, `id_servicio`, `nombre_responsable`, `correo_responsable`, `celular_responsable`, `descripcion_cita`, `fecha_registro`, `fecha_cita`) VALUES ('$iduser', '$idMascota', '$idServicio', '$nombre', '$correo', '$celular', '$descripcion', current_timestamp(), '$fecha')";
+
+		$resultado = mysqli_query($this->conectar(),$SQL);
+		$this->desconectar();
+
+			if ($resultado == true) {
+				return 1;
+			} else {
+				return 0;
+			}	
+
+	}
+
 
 
 }
