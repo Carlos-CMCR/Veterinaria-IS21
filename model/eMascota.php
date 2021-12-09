@@ -37,14 +37,7 @@ class mascota extends Conecta{
 	}
 
 	public function registrarCita($iduser,$nombre,$correo,$celular,$idMascota,$idServicio,$descripcion,$fecha){
-		echo $iduser." ";
-		echo $idServicio." ";
-		echo $idMascota." ";		
-		echo $nombre." ";
-		echo $correo." ";
-		echo $celular." ";
-		echo $descripcion." ";		
-		echo $fecha." ";
+		
 		
 		$SQL="INSERT INTO `citas` (`id_usuario`, `id_mascota`, `id_servicio`, `nombre_responsable`, `correo_responsable`, `celular_responsable`, `descripcion_cita`, `fecha_registro`, `fecha_cita`) VALUES ('$iduser', '$idMascota', '$idServicio', '$nombre', '$correo', '$celular', '$descripcion', current_timestamp(), '$fecha')";
 
