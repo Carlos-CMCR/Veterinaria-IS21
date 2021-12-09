@@ -36,7 +36,7 @@
         </div>
         <div class="mb-3">
         <div class="row ">
-            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Edad(neses)</label></div>
+            <div class="col-4 d-flex align-items-center"><label  for="usuario" class="form-label">Edad(meses)</label></div>
             <div class="col-8 "><input type="text" class="form-control" aria-describedby="text"  name="txtEdad"> </div>
         </div>
         </div>
