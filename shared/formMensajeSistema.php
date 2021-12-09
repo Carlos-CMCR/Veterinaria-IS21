@@ -8,6 +8,7 @@
 		}
 		public function formMensajeSistemaShow($mensaje,$enlace){
 			?>
+            <link rel="stylesheet" href="../styles/stylesForm.css">
             </br></br>
 			<table width="313" border="0" align="center">
                 <tr>
@@ -28,6 +29,7 @@
 
         public function formMensajeSistemaShow2($mensaje,$enlace){
             ?>
+            <link rel="stylesheet" href="../styles/stylesForm.css">
             </br></br>
             <table width="313" border="0" align="center">
                 <tr>
@@ -48,6 +50,7 @@
 
         public function formMensajeSistemaShowExito($mensaje,$enlace){
         ?>
+            <link rel="stylesheet" href="../styles/stylesForm.css">
                 </br></br>
                 <table width="313" border="0" align="center">
                     <tr>
