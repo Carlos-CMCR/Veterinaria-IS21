@@ -33,7 +33,7 @@
                  include_once("../shared/formMensajeSistema.php");
                 $mensaje = new formMensajeSistema;
                 $mensaje ->formMensajeSistema();                           
-                $mensaje ->formMensajeSistemaShow("La respuesta es incorrecta","<form action='../moduloSeguridad/getRecordarClave.php' method='POST'><input type='submit' class='btn btn-link'  name='btnRecordarClave' id='btnRecordarClave' value='Volver'></form>");
+                $mensaje ->formMensajeSistemaShow("La respuesta es incorrecta","<a href='../view/modulos/moduloSeguridad/formPreguntaSeguridad.php'>Atrás</a>");
 
                 
             }

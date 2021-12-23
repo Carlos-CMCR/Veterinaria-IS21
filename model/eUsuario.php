@@ -111,7 +111,7 @@ class Usuario extends Conecta{
 			$this->desconectar();
 			
 			if($nameimg==null){
-				echo "Llegó vaíco";
+				
 			}else{
 				$SQL = "UPDATE `usuario` SET `imgperfil` = '$nameimg' WHERE `usuario`.`num_doc` = $dni";
 				$resultado = mysqli_query($this->conectar(),$SQL);
