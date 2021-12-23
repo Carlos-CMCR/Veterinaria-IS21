@@ -1,10 +1,9 @@
 <?php
-
     session_start();
 
     if ($_SESSION['idrol']==4) {
         if(isset($_POST['btnGestionarUsuario']) or isset($_GET['btnGestionarUsuario'])){
-        include_once("../view/modulos/moduloAdministracion/formGestionarusuario.php");
+        include_once("../view/modulos/moduloAdministracion/formGestionarUsuario.php");
         include_once("controllerGestionarUsuario.php");
         $objFormGestionarUsuario = new formGestionarUsuarios;
         $objUsuarios = new controllerGestionarUsuario;
