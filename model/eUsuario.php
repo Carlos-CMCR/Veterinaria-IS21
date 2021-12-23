@@ -104,11 +104,19 @@ class Usuario extends Conecta{
 		}
 
 
-		public function actualizarUser($nombre,$apellido,$dni,$celular){
+		public function actualizarUser($nombre,$apellido,$dni,$celular,$nameimg){
 			
 			$SQL = "UPDATE `usuario` SET `nombres` = '$nombre',`apellidos` = '$apellido',`celular` = '$celular' WHERE `usuario`.`num_doc` = $dni";
 			$resultado = mysqli_query($this->conectar(),$SQL);
-			$this->desconectar();		
+			$this->desconectar();
+			
+			if($nameimg==null){
+				echo "Llegó vaíco";
+			}else{
+				$SQL = "UPDATE `usuario` SET `imgperfil` = '$nameimg' WHERE `usuario`.`num_doc` = $dni";
+				$resultado = mysqli_query($this->conectar(),$SQL);
+				$this->desconectar();
+			}
 				
 	     	if($resultado == true) return (1);
 				else return (0);

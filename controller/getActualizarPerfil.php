@@ -8,11 +8,18 @@ if (isset($_POST['btnActualizar']) or (isset($_SESSION["user"]) && isset($_SESSI
 	$celular = $_POST['Celular'];
 
 	
+
+	$name = $_FILES['imgperfil']['name'];
+    $tmp_name = $_FILES['imgperfil']['tmp_name'];
+    $ruta = '../view/img/'.$name;
+    move_uploaded_file($tmp_name,$ruta);
+
+
 	
 
 	include_once("../model/eUsuario.php");
 	$enviar = new Usuario;
-	$retornado=$enviar -> actualizarUser($nombre,$apellido,$dni,$celular);
+	$retornado=$enviar -> actualizarUser($nombre,$apellido,$dni,$celular,$name);
 
 	if ($retornado==1) {
 		include_once("../shared/formMensajeSistema.php");
@@ -25,6 +32,9 @@ if (isset($_POST['btnActualizar']) or (isset($_SESSION["user"]) && isset($_SESSI
         $mensajeo ->formMensajeSistema();
         $mensajeo ->formMensajeSistemaShow("Hubo un error, intenta nuevamente","<a href='../view/modulos/moduloSeguridad/formAutenticarUsuario.php'>Atrás</a>");
 	}
+	
+
+
 	
 	
 
