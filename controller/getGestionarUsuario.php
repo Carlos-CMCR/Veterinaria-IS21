@@ -4,25 +4,25 @@
 
     if ($_SESSION['idrol']==4) {
         if(isset($_POST['btnGestionarUsuario']) or isset($_GET['btnGestionarUsuario'])){
-        include_once("../view/modulos/moduloAdministracion/formGestionarusuario.php");
-        include_once("controllerGestionarUsuario.php");
+        include_once("../view/modulos/moduloAdministracion/formGestionarUsuario.php");
+        include_once("controllerGestionarusuario.php");
         $objFormGestionarUsuario = new formGestionarUsuarios;
-        $objUsuarios = new controllerGestionarUsuario;
+        $objUsuarios = new controllerGestionarusuario;
         $objUsuarios = $objUsuarios->obtenerusuarios();
         $objFormGestionarUsuario -> EncabezadoShow();
         $objFormGestionarUsuario -> formGestionarUsuariosShow($objUsuarios);
     }
     elseif(isset($_POST['btnRegistrarUsuario'])  or isset($_GET['btnRegistrarUsuario'])){
-        include_once("controllerGestionarUsuario.php");
-        $objcontAgregarUsuario = new controllerGestionarUsuario;
+        include_once("controllerGestionarusuario.php");
+        $objcontAgregarUsuario = new controllerGestionarusuario;
         $objcontAgregarUsuario -> mostrarformAgregarUsuario();
     }
     //AQUI JALAMOS LOS DATOS DEL ID Y LO MANDAMOS A LA VISTA EDITAR
     elseif(isset($_POST['btnEditarUsuario'])){
         $id=  $_POST['idusuario'];      
         include_once("../view/modulos/moduloAdministracion/formEditarUsuario.php");
-        include_once("controllerGestionarUsuario.php");
-        $objcontEditarUsuario = new controllerGestionarUsuario;
+        include_once("controllerGestionarusuario.php");
+        $objcontEditarUsuario = new controllerGestionarusuario;
         $objFormEditarUsuario = new formEditarUsuario;
         $objFormEditarUsuario -> EncabezadoShow();
         $objcontEditarUsuario -> mostrarformEditarUsuario($id);
@@ -40,8 +40,8 @@
             $apellidos= $_POST['apellidos'];
             $idusuario= $_POST['idusuario'];
             $rolseleccionado= $_POST['rol'];
-            include_once("controllerGestionarUsuario.php");
-            $objActualizarUsuario= new controllerGestionarUsuario;
+            include_once("controllerGestionarusuario.php");
+            $objActualizarUsuario= new controllerGestionarusuario;
             $objActualizarUsuario-> actualizarUsuario($idusuario,$nombres,$apellidos,$rolseleccionado);
        
         }
@@ -62,8 +62,8 @@
             $num_doc=  $_POST['num_doc'];
             $pass_user=  $_POST['num_doc'];
             $respuesta=  $_POST['respuesta'];
-            include_once("controllerGestionarUsuario.php");
-            $objcontAgregarUsuario = new controllerGestionarUsuario;
+            include_once("controllerGestionarusuario.php");
+            $objcontAgregarUsuario = new controllerGestionarusuario;
             $objcontAgregarUsuario -> AgregarUsuario($nombres,$apellidos,$idrol,$num_doc,$pass_user,$respuesta);
                 if(!$objcontAgregarUsuario){
 
@@ -83,8 +83,8 @@
     elseif(isset($_POST['btnCambiarEstado'])){
         $idusuario= $_POST['idusuario'];
         $estado= $_POST['estado'];
-        include_once("controllerGestionarUsuario.php");
-        $objCambiarEstadoUsuario = new controllerGestionarUsuario;
+        include_once("controllerGestionarusuario.php");
+        $objCambiarEstadoUsuario = new controllerGestionarusuario;
         $objCambiarEstadoUsuario->CambiarEstadoUsuario($idusuario,$estado);
 
     }
@@ -95,7 +95,7 @@
             include_once("../view/modulos/moduloAdministracion/formGestionarUsuario.php");
             include_once("controllerGestionarusuario.php");
             $objFormGestionarUsuario = new formGestionarUsuarios;
-            $objUsuarios = new controllerGestionarUsuario;
+            $objUsuarios = new controllerGestionarusuario;
             $objUsuarios = $objUsuarios->obtenerusuariosfiltrados($filtroestado);
             $objFormGestionarUsuario -> formGestionarUsuariosShow($objUsuarios);      
             
@@ -104,7 +104,7 @@
             include_once("../view/modulos/moduloAdministracion/formGestionarUsuario.php");
             include_once("controllerGestionarusuario.php");
             $objFormGestionarUsuario = new formGestionarUsuarios;
-            $objUsuarios = new controllerGestionarUsuario;
+            $objUsuarios = new controllerGestionarusuario;
             $objUsuarios = $objUsuarios->obtenerusuariosfiltrados($filtroestado);
             $objFormGestionarUsuario -> formGestionarUsuariosShow($objUsuarios);
         }
@@ -113,7 +113,7 @@
             include_once("controllerGestionarusuario.php");
             $objFormGestionarUsuario = new formGestionarUsuarios;
             $objFormGestionarUsuario -> EncabezadoShow();
-            $objUsuarios = new controllerGestionarUsuario;
+            $objUsuarios = new controllerGestionarusuario;
             $objUsuarios = $objUsuarios->obtenerusuarios();
             $objFormGestionarUsuario -> formGestionarUsuariosShow($objUsuarios);
         }
