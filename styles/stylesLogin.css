@@ -55,3 +55,16 @@ body {
  }*/
  
 
+/* PERFIL */
+.centrar-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+.img-perfil{
+   border: 1px solid #252b37;
+   border-radius: 50%;
+   box-shadow:  5px 5px 9px #64676d ;
+}

@@ -40,11 +40,26 @@
     ?>
     
 
-    <form action="getActualizarPerfil.php" method="POST">
+    <form action="getActualizarPerfil.php" method="POST" enctype='multipart/form-data'>
     <div class="d-flex justify-content-center">               
     <div class="card mt-5 " style="width: 65rem;">
         <div class="card-header d-flex justify-content-center "><h5 class="card-title">Perfil</h5></div>
         <div class="card-body">
+        <div class="mb-3">
+        <div class="row-0 centrar-img">
+            
+            <?php
+                if($atributo['imgperfil']==null){
+                    ?><img src="../view/img/perfil.png" class="img-perfil" width="150" height="150"><?php
+                }else{
+                    ?><img src="../view/img/<?php echo $atributo['imgperfil']; ?>" class="img-perfil" width="150" height="150"><?php
+                }
+            ?>
+            
+            <input type="file" name="imgperfil">
+
+        </div>
+        </div>
         <div class="mb-3">
         <div class="row ">
             <div class="col-4 d-flex align-items-center"><label  for="nombres" class="form-label">Nombres</label></div>
