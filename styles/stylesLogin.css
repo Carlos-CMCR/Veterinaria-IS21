@@ -1,6 +1,5 @@
 body {
-   background-image: url('../view/img/background-acceso.jpg');
-   background-size: 100% auto;
+  min-height:100vh;
 }
 
 .container img {
@@ -26,8 +25,8 @@ body {
  /* ESTILOS INICIO---- */
  .background-acceso{
     background-image: url("../view/img/background-acceso.jpg");
-    background-size:100% auto;
-    
+    background-size:cover;
+   
 }
 .botons {
     width: 50%;

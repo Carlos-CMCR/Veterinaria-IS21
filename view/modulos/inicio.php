@@ -56,7 +56,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Consulta Veterinaria</h5>
                     <p class="card-text">En Vet-Spa, contamos con el personal médico más completo para la consulta veterinaria de su mascota, siempre estará en manos de los mejores profesionales.</p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <a href="view/principal.php?action=formConsulta" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Farmacia Veterinaria</h5>
                     <p class="card-text">En Vet-Spa,contamos con una amplia variedad de medicamentos para todas las especies, asesoramos en el uso y damos alternativas con medicamentos equivalentes..</p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <a href="view/principal.php?action=formFarmacia" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Baño y Peluquería</h5>
                     <p class="card-text">Ofrecemos el servicio de baños y peluquería para nuestros engreídos. Con personal capacitado y supervisado por bachilleres e internistas veterinarios.</p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <a href="view/principal.php?action=formBaño" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Juguetes y Accesorios</h5>
                     <p class="card-text">Tenemos una amplia gama de jugetes ya accesorios para para todo tipo de mascotas, educación continua tanto del personal como de nuestros clientes para lograr “propietarios responsables” en un ambiente agradable, sano y siempre con un trato respetuoso.</p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <a href="view/principal.php?action=formJugetes" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Vacunación y desparasitaciones en perros y gatos </h5>
                     <p class="card-text">La vacunación en perros y gatos es un aspecto importante a considerar siempre que tengamos una mascota, es un tratamiento preventivo para algunas enfermedades. </p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <a href="view/principal.php?action=formVacunacion" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Limpieza Dental </h5>
                     <p class="card-text">El cuidado es los dientes de su mascota es fundamental para una buena calidad de vida. Las mascotas no son ajenas a contraer caries, placa dental, enfermedad periodontal o inclusive la pérdida de dientes. Podemos evitarlon con la correcta higiene y limpieza dental periódica hecha por un veterinario. </p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
+                    <a href="view/principal.php?action=formLimpieza" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
