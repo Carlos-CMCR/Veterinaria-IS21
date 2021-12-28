@@ -13,7 +13,7 @@
 <header class="header">
 <nav class="menu navbar navbar-expand-lg navbar-light">
         <div class="container">      
-                    <a href=""><img src="../view/img/logo.png" alt=""></a>
+                    <a href="../index.php"><img src="../view/img/logo.png" alt=""></a>
             <div class="collapse navbar-collapse">
                  <div class="navbar-nav ms-auto">
                  <a href="../index.php" class="nav">HOME</a>

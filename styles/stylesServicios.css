@@ -85,8 +85,6 @@
   grid-template: 
   "img descripcion" 30rem/
   50% 50%;
-
-  
 }
 
 .img-servicio{
@@ -102,16 +100,16 @@
    color: white;
    width: 100%;
    height:20%;
-  
+   font-size:1.5rem;
    text-align: center;
    
 
 }
 .text__servicio{
    
- 
-
-   text-align: center;
+   
+   padding: 2rem;
+   text-align: justify;
 
 }
 
@@ -162,4 +160,19 @@ button {
 
   button:hover{
    color: rgb(255, 255, 255);
+  }
+
+
+  @media (max-width:1350px) {
+   body{
+      font-size:15px;
+   }
+   .contenedor__servicio{
+      display:grid;
+     grid-template: 
+     "descripcion" 30rem
+     "img" 30rem/
+     100%;
+   }
+     
   }
