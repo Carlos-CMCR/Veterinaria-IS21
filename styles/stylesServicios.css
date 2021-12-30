@@ -6,7 +6,7 @@
     color: #c6d7e3;
  }
  .menu {
-    background: #4a5363;
+    background: #252b37;
  }
  .navbar-nav .nav {
     text-decoration: none;
@@ -30,7 +30,7 @@ body{
 .footer {
     grid-area: footer;  
     background-color: #252b37;
-    color: white;
+    color: white; 
     bottom: 0;
     right: 0;
     left: 0;
