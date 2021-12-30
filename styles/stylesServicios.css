@@ -20,14 +20,17 @@
 
 
 /**/
+body{
+   min-height:100vh;
+}
 .header{
     grid-area: header;
 }
+
 .footer {
     grid-area: footer;  
     background-color: #252b37;
     color: white;
-    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
@@ -80,10 +83,17 @@
    flex-direction: column;
   
 }
+.button__servicio{
+   grid-area: button;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 .contenedor__servicio{
    display:grid;
   grid-template: 
-  "img descripcion" 30rem/
+  "img descripcion" auto
+  "img button" auto  /
   50% 50%;
 }
 
@@ -95,7 +105,7 @@
    
 }
 .tittle__servicio{
-   padding-top: 2rem ;
+   padding-top: 1rem;
    background-color: #252B37;
    color: white;
    width: 100%;
@@ -106,9 +116,11 @@
 
 }
 .text__servicio{
-   
-   
-   padding: 2rem;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 20rem;
+   padding: 1rem;
    text-align: justify;
 
 }
@@ -170,7 +182,8 @@ button {
    .contenedor__servicio{
       display:grid;
      grid-template: 
-     "descripcion" 30rem
+     "descripcion" auto
+     "button" auto
      "img" 30rem/
      100%;
    }
