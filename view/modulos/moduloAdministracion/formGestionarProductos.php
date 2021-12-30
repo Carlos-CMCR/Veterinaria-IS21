@@ -9,13 +9,14 @@ class formGestionarProductos extends formulario
     public function formGestionarProductosShow($retornado)
     { ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/estilos.css">
 
         <div class="d-flex justify-content-center align-items-center"  style="background-color: #252b37;">
             <div class="card my-4" style="width:80%;">
                 <div class="card-header">
                     <h1 class="titulo">Gestionar Servicios</h1>
                 </div>
-                <div class="card-body">
+                <div class="fondoGestion card-body " >
                     <p class="card-text">Bienvenido al panel de Gestión de Servicios</p>
                     <form action="getGestionarProductos.php" method="POST">
                         <div class="d-flex justify-content">
@@ -39,7 +40,7 @@ class formGestionarProductos extends formulario
                             </form>
                     </div>
 
-                        <table class="table" border=1>
+                        <table class="table" border=3 >
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col" style="width:10%;">id</th>
