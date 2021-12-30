@@ -50,8 +50,8 @@ class FormAgregarUsuario extends formulario
                     </form>
                     <div class="div-header">
                         <form action="getGestionarUsuario.php" method="POST">
-                            <input type="hidden" name="usuario" value="<?php echo $_SESSION['num_doc'] ?>">
-                            <input type="hidden" name="password" value="<?php echo $_SESSION['pass_user'] ?>">
+                           <!-- <input type="hidden" name="usuario" value="<?php echo $_SESSION['num_doc'] ?>">
+                            <input type="hidden" name="password" value="<?php echo $_SESSION['pass_user'] ?>">-->
                             <input class="btn btn-red" type="submit" name="btnGestionarUsuario" value="Atras">
                         </form>
                     </div>
