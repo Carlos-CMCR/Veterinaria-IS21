@@ -17,22 +17,7 @@ class formGestionarProductos extends formulario
                 </div>
                 <div class="card-body">
                     <p class="card-text">Bienvenido al panel de Gestión de Mascotas</p>
-                    <form action="getGestionarProductos.php" method="POST">
-                        <div class="d-flex justify-content">
-                            <select name="segunestado" class="form-select form-select-sm w-25">
-                                <option value="todos" selected>Todos</option>
-                                <option value="0">Estado 0</option>
-                                <option value="1">Estado 1</option>
-                            </select>
-                            <input type="submit" class="btn btn-info mx-3" name="btnFiltrarUsuarios" value="Filtrar">
-                        </div>
-                    </form>
-                    <div class="div_btn" style="display: flex;">
-                        <form action="getGestionarProductos.php" method="post">
-                            <input type="submit" class="btn btn-primary" name="btnAgregar" value="Agregar nuevo servicio">
-                        </form>
-                    </div>
-
+                    
                     <div class="div_btn" style="display: flex;">
                         <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
                                 <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>

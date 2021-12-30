@@ -14,8 +14,9 @@ class FormAgregarUsuario extends formulario
         /*session_start();*/
 ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/stylesLogin.css">
         <center>
-            <div class="card w-75 my-4">
+            <div class="f card w-75 my-4">
                 <div class="card-header">
                     <h1 class="titulo">Agregar Usuario</h1>
                 </div>
@@ -52,7 +53,7 @@ class FormAgregarUsuario extends formulario
                         <form action="getGestionarUsuario.php" method="POST">
                            <!-- <input type="hidden" name="usuario" value="<?php echo $_SESSION['num_doc'] ?>">
                             <input type="hidden" name="password" value="<?php echo $_SESSION['pass_user'] ?>">-->
-                            <input class="btn btn-red" type="submit" name="btnGestionarUsuario" value="Atras">
+                            <input class="btn btn-dark" type="submit" name="btnGestionarUsuario" value="Atras">
                         </form>
                     </div>
                 </div>

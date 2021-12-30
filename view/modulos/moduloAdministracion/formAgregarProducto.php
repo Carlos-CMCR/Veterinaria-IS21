@@ -15,12 +15,13 @@ class formAgregarProducto extends formulario
         
 ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/stylesLogin.css">
         <center>
-            <div class="card w-75 my-4">
+            <div class=" card w-75 my-4">
                 <div class="card-header">
                     <h1 class="titulo">Agregar servicio</h1>
                 </div>
-                <div class="card-body">
+                <div class="  card-body">
                     <form action="getGestionarProductos.php" method="POST">
                                                 
                         <p>Nombre del servicio:</p>

@@ -28,10 +28,14 @@
             </div>
         </div>
     </nav>
-<body>
+<body  >
 
     <style>
-    
+    body {
+        background-image: url("../../../view/img/fondoGestion1.jpg");
+        background-size: cover;
+    }
+
     .button{
         margin-left: 40%;
         top: 0;
@@ -49,6 +53,8 @@
         color: black;
         transition: 0.5s;
      }
+
+     
      
     </style>
         
