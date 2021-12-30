@@ -9,13 +9,14 @@ class formGestionarUsuarios extends formulario
     public function formGestionarUsuariosShow($listaUsuarios)
     { ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/estilos.css">
         <?php /*session_start(); */?>
         <div class="d-flex justify-content-center align-items-center"  style="background-color: #252b37;">
-            <div class="card my-4" style="width:80%;">
+            <div class="fondoGestion card my-4" style="width:80%;">
                 <div class="card-header">
                     <h1 class="titulo">Gestionar Usuarios</h1>
                 </div>
-                <div class="card-body">
+                <div class=" card-body">
                     <p class="card-text">Bienvenido al panel de Gestionar Usuarios</p>
                     <form action="getGestionarUsuario.php" method="POST">
                         <div class="d-flex justify-content">

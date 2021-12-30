@@ -12,11 +12,11 @@ class formGestionarProductos extends formulario
         <link rel="stylesheet" href="../styles/estilos.css">
 
         <div class="d-flex justify-content-center align-items-center"  style="background-color: #252b37;">
-            <div class="card my-4" style="width:80%;">
+            <div class="fondoGestion card my-4" style="width:80%;">
                 <div class="card-header">
                     <h1 class="titulo">Gestionar Servicios</h1>
                 </div>
-                <div class="fondoGestion card-body " >
+                <div class=" card-body " >
                     <p class="card-text">Bienvenido al panel de Gestión de Servicios</p>
                     <form action="getGestionarProductos.php" method="POST">
                         <div class="d-flex justify-content">

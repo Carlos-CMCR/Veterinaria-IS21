@@ -9,9 +9,10 @@ class formGestionarCitas extends formulario
     public function formGestionarCitasShow($citas)
     { ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/estilos.css">
 
         <div class="d-flex justify-content-center align-items-center"  style="background-color: #252b37;">
-            <div class="card my-4" style="width:80%;">
+            <div class="fondoGestion card my-4" style="width:80%;">
                 <div class="card-header">
                     <h1 class="titulo">Gestionar Citas</h1>
                 </div>
