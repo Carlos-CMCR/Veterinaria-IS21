@@ -221,6 +221,13 @@ body {
    transform: scale(1.1);
 }
 
+/* -----------------ESTILOS PARA FORMULARIO GESTIONAR SERVICIO ------------*/
+.fondoGestion{
+      background-image: url("../view/img/fondoGestion.webp");
+      background-size:100% auto;
+}
+
+
 /* -----------------ESTILOS PARA FORMULARIO DEL PERFIL DEL USUARIO ------------*/
 
 /* .contenedor-perfil {
