@@ -223,7 +223,7 @@ body {
 
 /* -----------------ESTILOS PARA FORMULARIO GESTIONAR SERVICIO ------------*/
 .fondoGestion{
-      background-image: url("../view/img/fondoGestion.webp");
+      background-image: url("../view/img/fondoGestion.jpg");
       background-size:100% auto;
       background-color: rgba(red, green, blue, 0.4);
 }
