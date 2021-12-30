@@ -223,10 +223,19 @@ body {
 
 /* -----------------ESTILOS PARA FORMULARIO GESTIONAR SERVICIO ------------*/
 .fondoGestion{
-      background-image: url("../view/img/fondoGestion.jpg");
+      background-image: url("../view/img/fondoGestion1.jpg");
       background-size:100% auto;
-      background-color: rgba(red, green, blue, 0.4);
+      background-color: rgba(red, green, blue, 0.2);
 }
+
+/* -----------------ESTILOS PARA OPCIONES DE GESTION ------------*/
+.fondoGestion1{
+   background-image: url("../view/img/fondoGestion1.jpg");
+   background-size:100% auto;
+   background-color: rgba(red, green, blue, 0.2);
+}
+
+
 
 
 /* -----------------ESTILOS PARA FORMULARIO DEL PERFIL DEL USUARIO ------------*/

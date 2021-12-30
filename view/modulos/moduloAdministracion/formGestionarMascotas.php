@@ -9,30 +9,15 @@ class formGestionarProductos extends formulario
     public function formGestionarProductosShow($retornado)
     { ?>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="../styles/estilos.css">
         <div class="d-flex justify-content-center align-items-center" style="background-color: #252b37;">
-            <div class="card my-4" style="width:80%;">
+            <div class="fondoGestion card my-4" style="width:80%;">
                 <div class="card-header">
                     <h1 class="titulo">Gestionar Mascotas</h1>
                 </div>
                 <div class="card-body">
                     <p class="card-text">Bienvenido al panel de Gestión de Mascotas</p>
-                    <form action="getGestionarProductos.php" method="POST">
-                        <div class="d-flex justify-content">
-                            <select name="segunestado" class="form-select form-select-sm w-25">
-                                <option value="todos" selected>Todos</option>
-                                <option value="0">Estado 0</option>
-                                <option value="1">Estado 1</option>
-                            </select>
-                            <input type="submit" class="btn btn-info mx-3" name="btnFiltrarUsuarios" value="Filtrar">
-                        </div>
-                    </form>
-                    <div class="div_btn" style="display: flex;">
-                        <form action="getGestionarProductos.php" method="post">
-                            <input type="submit" class="btn btn-primary" name="btnAgregar" value="Agregar nuevo servicio">
-                        </form>
-                    </div>
-
+                    
                     <div class="div_btn" style="display: flex;">
                         <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
                                 <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>
