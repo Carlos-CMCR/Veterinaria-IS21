@@ -225,7 +225,7 @@ body {
 .fondoGestion{
       background-image: url("../view/img/fondoGestion.webp");
       background-size:100% auto;
-      background-color: rgba(red, green, blue, 0.2);
+      background-color: rgba(red, green, blue, 0.4);
 }
 
 

@@ -1,0 +1,285 @@
+[33mcommit 4a40a8385e67d6dfe041ffe375a6c5fa0e89b8c3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 30 16:12:14 2021 -0500
+
+    imagen
+
+[33mcommit 7f4b8df6a4a9d044bf41652199af81fb7025e5b2[m
+Merge: 9aa6c65 6bc79df
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 30 16:05:46 2021 -0500
+
+    Merge branch 'main' of https://github.com/Carlos-CMCR/Veterinaria-IS21
+
+[33mcommit 6bc79df4f6b756fb217cd1d6505e3f17dd3a5135[m
+Author: Jhon <jairosky.22.vm@gmail.com>
+Date:   Thu Dec 30 16:05:32 2021 -0500
+
+    o.o
+
+[33mcommit 9aa6c656fd7a9f11bd9f84ad2676ce3f4ba70a1f[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 30 16:04:57 2021 -0500
+
+    botones
+
+[33mcommit 05417b7a2cd264f805cee70a47a2095dc49beea1[m
+Author: Jhon <jairosky.22.vm@gmail.com>
+Date:   Wed Dec 29 00:54:27 2021 -0500
+
+    :3
+
+[33mcommit 2eada21657e42df9e146463e06634cc88269f140[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Tue Dec 28 01:14:32 2021 -0500
+
+    todos los servicios
+
+[33mcommit c68bfdecc1f6252891a4d2e21ab0db3f017f36eb[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Mon Dec 27 22:25:56 2021 -0500
+
+    servc
+
+[33mcommit 55a19f9823aba2f334c41ca17ef39bbb176e570f[m
+Merge: f809cb9 df6bd81
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Mon Dec 27 20:38:48 2021 -0500
+
+    Merge branch 'main' of https://github.com/Carlos-CMCR/Veterinaria-IS21
+
+[33mcommit f809cb9144d0ef7141454719bc9575f3e548f10d[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Mon Dec 27 20:38:28 2021 -0500
+
+    Servicios
+
+[33mcommit df6bd81799a47a4333364a2d7a639414ec4f8ccd[m
+Author: Paul Dc <pdelaguila777@gmail.com>
+Date:   Fri Dec 24 10:17:39 2021 -0500
+
+    chat bot
+
+[33mcommit ebfc32609d373a9b01bb2b11ea307f84b46512c7[m
+Merge: 22ee576 4d0d6d8
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 23 15:54:00 2021 -0500
+
+    perfil
+
+[33mcommit 22ee57600d9ad36971480ed59de530450a4a31e1[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 23 15:37:38 2021 -0500
+
+    asdas
+
+[33mcommit 4d0d6d8264202b905557088123509512dc39f523[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 23 08:13:44 2021 -0500
+
+    Bug de gestionar usuario corregido
+
+[33mcommit 2b52bba885c58dc0910d1e2325475be22bbb73dd[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 23 08:03:26 2021 -0500
+
+    bug de recuperar contraseña corregido
+
+[33mcommit 12327f134075126bd9fea5dc5691fb21478d93cd[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 23 07:38:25 2021 -0500
+
+    Foto de perfil sin diseño
+
+[33mcommit 72caff0bd98db37bc803345e9d2d9b343e0114ef[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 9 16:44:17 2021 -0500
+
+    controllerGestionarUsuario -> controllerGestionarusuario
+
+[33mcommit 90be725d53bc86e5bc3838fccf8e833f6b99e271[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 9 12:06:16 2021 -0500
+
+    Areglen el gestionar usuario goo
+
+[33mcommit 8ffc3a9545bb14abde4e676ce446a574de3dba51[m
+Author: Paul Dc <pdelaguila777@gmail.com>
+Date:   Thu Dec 9 10:32:46 2021 -0500
+
+    Ultimo avance sprint ll
+
+[33mcommit b41cec5beb3ad63c662424d09d18fda5c3d0725e[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 9 02:30:21 2021 -0500
+
+    GestionarCitas
+
+[33mcommit 674be35625970e09e9ea04a0bf8830ec8017e860[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 8 17:30:59 2021 -0500
+
+    sdfs
+
+[33mcommit 3e29442c2275479994192518ee49c69f5341d483[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 8 17:14:22 2021 -0500
+
+    Registro de citas terminado
+
+[33mcommit 35dcce86223c53e8098c330e52c8c6361c2d2c0d[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 8 14:16:27 2021 -0500
+
+    ad
+
+[33mcommit 7b8566afbd07dea71a8fe680861966a0fc085ebb[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 8 14:04:49 2021 -0500
+
+    Vista citas arreglada
+
+[33mcommit ece3e1c373db9eaafcdcbc2367cc890c942d42e3[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 8 13:47:21 2021 -0500
+
+    feliz navidad
+
+[33mcommit a8504a682fb53799e7adaf8beae786529ab5c83c[m
+Author: Paul Dc <pdelaguila777@gmail.com>
+Date:   Wed Dec 8 13:02:05 2021 -0500
+
+    Ultimo avance registrar mascota
+
+[33mcommit 43c19b5efa06f0bfbe56ff8b87dbffe1d522d91d[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 8 12:46:22 2021 -0500
+
+    gato cuba
+
+[33mcommit 92429dd66b2f27ab719839df1bace6b4bba42e21[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Tue Dec 7 16:58:53 2021 -0500
+
+    Cambiar pass en el apartado de perfil
+
+[33mcommit 89ed1b81faee085c7c83a42ad308e5c15edb758f[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Tue Dec 7 16:46:57 2021 -0500
+
+    hola mundo
+
+[33mcommit af64f0902b8235a6c8bca567c3362256382963e4[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 2 19:29:34 2021 -0500
+
+    correccion webhost
+
+[33mcommit 03cc12676e735f8196b88fd42c4d0795ae180774[m
+Merge: 07eccc1 276c7dc
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 2 17:36:55 2021 -0500
+
+    formAgregarCita
+
+[33mcommit 07eccc1f187caa90066111fb736f8cba5061de08[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 2 17:27:57 2021 -0500
+
+    asdas
+
+[33mcommit 276c7dc84afe62bdf414fb7d6b8e341555d3cbab[m
+Author: Jhon <jairosky.22.vm@gmail.com>
+Date:   Thu Dec 2 17:27:28 2021 -0500
+
+    formCitas.2
+
+[33mcommit f687e94ff35576e9fd5c608d6895244d7d79cd51[m
+Author: Jhon <jairosky.22.vm@gmail.com>
+Date:   Thu Dec 2 17:03:31 2021 -0500
+
+    formCitas
+
+[33mcommit f3453f6e522cac14b934d2a49d406a3867fe2c00[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Thu Dec 2 16:25:18 2021 -0500
+
+    cruds
+
+[33mcommit 698a8152b007e3fe17b80068916beef228487af1[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 2 10:18:52 2021 -0500
+
+    hola mundo2
+
+[33mcommit db52995976db8883b3fa3ab0bb87548c94a56ce4[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 2 09:19:12 2021 -0500
+
+    hola mundo 10
+
+[33mcommit 86094b9fa69526e214aa190c7cb703863d55c9dc[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 2 07:35:45 2021 -0500
+
+    hola mundo6
+
+[33mcommit 1833228628d08f93f69c026ad16db4428ae422ea[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 2 05:42:07 2021 -0500
+
+    desperte
+
+[33mcommit 480789e4184e4c66ce2755d8367917e245f28ce2[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Thu Dec 2 00:42:17 2021 -0500
+
+    tengo sueño
+
+[33mcommit 7d1daf6e552e54179e6bff7c88cce16da7e9e0bc[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 1 22:52:05 2021 -0500
+
+    hola mundo 4
+
+[33mcommit 04735ac3aa34f56dba0ffd089d797cdf1a86ced0[m
+Author: Jhon <jairosky.22.vm@gmail.com>
+Date:   Wed Dec 1 22:41:40 2021 -0500
+
+    corregidObservacion
+
+[33mcommit 918a0ed45a6d8faedaa5d3975f4c7d930427d2c5[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 1 21:57:21 2021 -0500
+
+    hola mundo3
+
+[33mcommit 38966b6d5eef1efb001d0e02233719a43dcace2b[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 1 21:02:26 2021 -0500
+
+    hola mundo2
+
+[33mcommit ea04daf0a9415220589051f5d256f5f5732e4549[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 1 20:05:18 2021 -0500
+
+    hola mundo
+
+[33mcommit 09064da1d770325a4b65a3839719184848dfe19c[m
+Author: 2016100129 <jorgechavez199524@gmail.com>
+Date:   Wed Dec 1 19:23:22 2021 -0500
+
+    hola mundo
+
+[33mcommit e349492dfe9d087f2ee6aad8e38b61acaee4d556[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: PuntitoCCR <carloscarbajalrojas@hotmail.com>
+Date:   Tue Nov 30 22:25:02 2021 -0500
+
+    avance 1 sprint
+
+[33mcommit b303fee2b54ae6f1c40739e123628558a5877999[m
+Author: Carlos Carbajal <54633612+Carlos-CMCR@users.noreply.github.com>
+Date:   Tue Nov 30 22:20:04 2021 -0500
+
+    Initial commit
