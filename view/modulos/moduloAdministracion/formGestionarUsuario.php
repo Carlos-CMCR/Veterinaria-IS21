@@ -94,11 +94,11 @@ class formGestionarUsuarios extends formulario
                                 <?php  } ?>
                         </table>
                         <div class="card-footer">
-                            <form action="../Controller/getUsuario.php" method="POST">
+                            <!--<form action="../Controller/getUsuario.php" method="POST">
                                 <input type="hidden" name="usuario" value="<?php echo $_SESSION['num_doc'] ?>">
                                 <input type="hidden" name="password" value="<?php echo $_SESSION['pass_user'] ?>">
                                 
-                            </form>
+                            </form>-->
                             <form action='../view/modulos/moduloSeguridad/formGestionar.php' method='POST'>
                                 <input type='submit' class='btn btn-dark'  name='btnAtras' id='btnAtras' value='Atras'>
                             </form>
